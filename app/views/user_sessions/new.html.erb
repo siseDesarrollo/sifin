@@ -1,0 +1,19 @@
+<div class="wrapper">  
+  <%= form_for @user_session, :as => :user_session, :url => { :action => "create" }, :html => {:class => "login"} do |f| %>
+    <center>
+      <%= image_tag("logo_sifin.png")%>      
+    </center>
+    <p class="title"></p>
+    <input type="text" name="user_session[login]" required="required" placeholder="Usuario" autofocus="true" 
+    oninvalid="this.setCustomValidity('Ingresar el usuario.')" oninput="setCustomValidity('')"/>
+    <i class="fa fa-user"></i>
+    <input type="password" name="user_session[password]" required="required" placeholder="Contraseña" oninvalid="this.setCustomValidity('Ingresar la contraseña.')"
+    oninput="setCustomValidity('')"/>
+    <i class="fa fa-key"></i>
+    <a href="#">Olvidaste tu contraseña?</a>
+    <button>
+      <i class="spinner"></i>
+      <span class="state">LOGIN</span>
+    </button>    
+  <% end %>
+</div>
