@@ -25,6 +25,7 @@ gem 'jquery-datatables-rails', :github=>'rweng/jquery-datatables-rails'
 gem 'twitter-bootstrap-rails'
 
 gem 'authlogic'
+gem 'unicorn'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
